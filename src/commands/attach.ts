@@ -1,6 +1,5 @@
 import * as vscode from "vscode"
-import { attachTerminal, createTerminalWithArgs } from "../services/terminal"
-import { listWorkspaceSessions } from "../services/opencode"
+import { attachTerminal } from "../services/terminal"
 
 export function registerAttachCommand(context: vscode.ExtensionContext): vscode.Disposable {
   return vscode.commands.registerCommand("opencode-agent.attach", async () => {
